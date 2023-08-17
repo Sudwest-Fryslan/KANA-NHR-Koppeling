@@ -1,0 +1,6 @@
+<!DOCTYPE configuration [
+    <!ENTITY DDS2Kana SYSTEM "Configuration_ProcessMessages.xml">
+]>
+<Configuration name="DDS2Kana">
+    &DDS2Kana;
+</Configuration>

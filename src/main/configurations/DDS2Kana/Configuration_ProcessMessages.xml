@@ -1,0 +1,25 @@
+<Module xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:noNamespaceSchemaLocation="../FrankConfig.xsd">
+	<Adapter name="ProcessDDSMessageToKana">
+		<Receiver>
+			<ApiListener
+				name="ProcessDDSMessageToKana"
+				method="POST"
+				uriPattern="/ProcessDDSMessageToKana/" />
+		</Receiver>
+
+		<Pipeline>
+			<Exits>
+				<Exit name="Success" state="SUCCESS" />
+				<Exit name="Exception" state="ERROR" />
+			</Exits>
+
+			<XsltPipe name="AddMissingElement" indentXml="true" styleSheetName="xsl/AddElement.xsl" />
+
+			<SenderPipe name="SendToKana">
+				<WebServiceSender name="SendToKana" url="${kana_endpoint}" />
+			</SenderPipe>
+		</Pipeline>
+	</Adapter>
+
+</Module>
