@@ -1,1 +1,1 @@
-# DDS2Kana
+# Kana-NHR Koppeling
