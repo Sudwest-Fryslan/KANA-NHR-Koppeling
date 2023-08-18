@@ -1,0 +1,6 @@
+<!DOCTYPE configuration [
+    <!ENTITY KANA-NHR-Koppeling SYSTEM "Configuration_ProcessMessages.xml">
+]>
+<Configuration name="KANA-NHR-Koppeling">
+    &KANA-NHR-Koppeling;
+</Configuration>

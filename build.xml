@@ -1,5 +1,5 @@
-<project default="restart-DDS2Kana">
-    <target name="restart-DDS2Kana">
+<project default="restart-KANA-NHR-Koppeling">
+    <target name="restart-KANA-NHR-Koppeling">
         <basename property="project.dir" file="${basedir}"/>
         <condition property="exe" value="../frank-runner/restart.bat" else="/bin/bash">
             <os family="windows"/>
