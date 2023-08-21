@@ -1,5 +1,8 @@
 name: Build
 
+env:
+  DOCKER_IMAGE_REPOSITORY: wearefrank/kana-nhr-koppeling
+  
 on:
   pull_request:
     branches:
