@@ -17,7 +17,7 @@
 			<XsltPipe name="AddMissingElement" indentXml="true" styleSheetName="xsl/AddElement.xsl" />
 
 			<SenderPipe name="SendToKana">
-				<WebServiceSender name="SendToKana" url="${kana_endpoint}" throwApplicationFaults="false" soapAction="http://www.egem.nl/StUF/sector/bg/0310/stuurgegevens" />
+				<WebServiceSender name="SendToKana" url="${kana_endpoint}" throwApplicationFaults="false" />
 			</SenderPipe>
 		</Pipeline>
 	</Adapter>
