@@ -1,5 +1,12 @@
 [![conventional commits](https://img.shields.io/badge/conventional%20commits-1.0.0-yellow.svg)](https://conventionalcommits.org) [![semantic versioning](https://img.shields.io/badge/semantic%20versioning-2.0.0-green.svg)](https://semver.org)
 
+## [1.1.0](https://github.com/Sudwest-Fryslan/KANA-NHR-Koppeling/compare/v1.0.6...v1.1.0) (2023-09-01)
+
+
+### 🍕 Features
+
+* remove custom Ladybug code & soapAction ([4e9bcb1](https://github.com/Sudwest-Fryslan/KANA-NHR-Koppeling/commit/4e9bcb1bd49a0d514da0a07543b1032537ca6c13))
+
 ## [1.0.6](https://github.com/Sudwest-Fryslan/KANA-NHR-Koppeling/compare/v1.0.5...v1.0.6) (2023-08-31)
 
 
