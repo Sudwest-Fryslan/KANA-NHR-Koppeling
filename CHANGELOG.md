@@ -1,5 +1,12 @@
 [![conventional commits](https://img.shields.io/badge/conventional%20commits-1.0.0-yellow.svg)](https://conventionalcommits.org) [![semantic versioning](https://img.shields.io/badge/semantic%20versioning-2.0.0-green.svg)](https://semver.org)
 
+## [1.1.1](https://github.com/Sudwest-Fryslan/KANA-NHR-Koppeling/compare/v1.1.0...v1.1.1) (2023-09-01)
+
+
+### 🧑‍💻 Code Refactoring
+
+* re-do Ladybug code in different way ([e2cf345](https://github.com/Sudwest-Fryslan/KANA-NHR-Koppeling/commit/e2cf345f541942471408270c900d75e368f850a5))
+
 ## [1.1.0](https://github.com/Sudwest-Fryslan/KANA-NHR-Koppeling/compare/v1.0.6...v1.1.0) (2023-09-01)
 
 
