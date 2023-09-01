@@ -14,7 +14,8 @@
 				<Exit name="Exception" state="ERROR" />
 			</Exits>
 
-			<XsltPipe name="AddMissingElement" indentXml="true" styleSheetName="xsl/AddElement.xsl" />
+			<!-- <XsltPipe name="AddMissingElement" indentXml="true" styleSheetName="xsl/AddElement.xsl" /> -->
+			<EchoPipe name="CopyInsert"></EchoPipe>
 
 			<SenderPipe name="SendToKana">
 				<WebServiceSender name="SendToKana" url="${kana_endpoint}" throwApplicationFaults="false" />
