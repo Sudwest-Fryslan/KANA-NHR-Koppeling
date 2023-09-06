@@ -1,5 +1,12 @@
 [![conventional commits](https://img.shields.io/badge/conventional%20commits-1.0.0-yellow.svg)](https://conventionalcommits.org) [![semantic versioning](https://img.shields.io/badge/semantic%20versioning-2.0.0-green.svg)](https://semver.org)
 
+## [1.3.0](https://github.com/Sudwest-Fryslan/KANA-NHR-Koppeling/compare/v1.2.5...v1.3.0) (2023-09-06)
+
+
+### 🍕 Features
+
+* add XSLT ([454a6fc](https://github.com/Sudwest-Fryslan/KANA-NHR-Koppeling/commit/454a6fc6ae64df242297567550d61ee34d6ebdd8))
+
 ## [1.2.5](https://github.com/Sudwest-Fryslan/KANA-NHR-Koppeling/compare/v1.2.4...v1.2.5) (2023-09-06)
 
 
