@@ -1,5 +1,12 @@
 [![conventional commits](https://img.shields.io/badge/conventional%20commits-1.0.0-yellow.svg)](https://conventionalcommits.org) [![semantic versioning](https://img.shields.io/badge/semantic%20versioning-2.0.0-green.svg)](https://semver.org)
 
+## [1.2.1](https://github.com/Sudwest-Fryslan/KANA-NHR-Koppeling/compare/v1.2.0...v1.2.1) (2023-09-06)
+
+
+### 🧑‍💻 Code Refactoring
+
+* change from webservice to httpsender ([825929e](https://github.com/Sudwest-Fryslan/KANA-NHR-Koppeling/commit/825929e171ddbb3f40ab7e74e0d7a0c603737415))
+
 ## [1.2.0](https://github.com/Sudwest-Fryslan/KANA-NHR-Koppeling/compare/v1.1.1...v1.2.0) (2023-09-01)
 
 
