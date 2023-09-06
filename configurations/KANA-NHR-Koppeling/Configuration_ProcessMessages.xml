@@ -18,7 +18,7 @@
 			<EchoPipe name="CopyInsert"></EchoPipe>
 
 			<SenderPipe name="SendToKana">
-				<HttpSender name="SendToKana" url="${kana_endpoint}" methodType="POST" />
+				<HttpSender name="SendToKana" url="${kana_endpoint}" methodType="POST" contentType="text/xml" charSet="utf-8" />
 			</SenderPipe>
 		</Pipeline>
 	</Adapter>
