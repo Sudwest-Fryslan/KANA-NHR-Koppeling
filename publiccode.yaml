@@ -2,7 +2,7 @@ publiccodeYmlVersion: "0.2"
 # Instructies: https://github.com/OpenCatalogi/OpenCatalogiBundle/blob/main/docs/Publiccode.md
 name: KANA-NHR-Koppeling
 url: "https://github.com/Sudwest-Fryslan/KANA-NHR-Koppeling.git"
-softwareVersion: "1.2.2"    # Optional
+softwareVersion: "1.2.3"    # Optional
 releaseDate: 2023-09-06
 applicationSuite: het-integratie-platform
 platforms:
