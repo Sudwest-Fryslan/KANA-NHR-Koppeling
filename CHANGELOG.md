@@ -1,5 +1,12 @@
 [![conventional commits](https://img.shields.io/badge/conventional%20commits-1.0.0-yellow.svg)](https://conventionalcommits.org) [![semantic versioning](https://img.shields.io/badge/semantic%20versioning-2.0.0-green.svg)](https://semver.org)
 
+## [1.2.4](https://github.com/Sudwest-Fryslan/KANA-NHR-Koppeling/compare/v1.2.3...v1.2.4) (2023-09-06)
+
+
+### 🧑‍💻 Code Refactoring
+
+* set correct sender ([f8bac47](https://github.com/Sudwest-Fryslan/KANA-NHR-Koppeling/commit/f8bac47ffa59f4b46ced96aea2caaf9bfc3ec495))
+
 ## [1.2.3](https://github.com/Sudwest-Fryslan/KANA-NHR-Koppeling/compare/v1.2.2...v1.2.3) (2023-09-06)
 
 
