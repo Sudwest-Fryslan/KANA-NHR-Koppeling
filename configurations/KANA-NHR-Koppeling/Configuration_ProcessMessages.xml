@@ -15,16 +15,8 @@
 			</Exits>
 
 			<!-- <XsltPipe name="AddMissingElement" indentXml="true" styleSheetName="xsl/AddElement.xsl" /> -->
-			
+
 			<SenderPipe name="SendToKana" getInputFromSessionKey="originalMessage">
-				<WebServiceSender name="SendToKana" url="${kana_endpoint}" throwApplicationFaults="false" />
-			</SenderPipe>
-
-			<SenderPipe name="SendToKana2" getInputFromSessionKey="originalMessage">
-				<WebServiceSender name="SendToKana" url="${kana_endpoint}" throwApplicationFaults="false" soapAction="vesLv01"/>
-			</SenderPipe>
-
-			<SenderPipe name="SendToKana3" getInputFromSessionKey="originalMessage">
 				<WebServiceSender name="SendToKana" url="${kana_endpoint}" throwApplicationFaults="false" soapAction="http://www.egem.nl/StUF/sector/bg/0310/vesLv01"/>
 			</SenderPipe>
 		</Pipeline>
