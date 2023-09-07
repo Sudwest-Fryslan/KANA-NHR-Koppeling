@@ -1,5 +1,22 @@
 [![conventional commits](https://img.shields.io/badge/conventional%20commits-1.0.0-yellow.svg)](https://conventionalcommits.org) [![semantic versioning](https://img.shields.io/badge/semantic%20versioning-2.0.0-green.svg)](https://semver.org)
 
+## [1.4.0](https://github.com/Sudwest-Fryslan/KANA-NHR-Koppeling/compare/v1.3.1...v1.4.0) (2023-09-07)
+
+
+### 🍕 Features
+
+* remove custom ladybug code ([e11524e](https://github.com/Sudwest-Fryslan/KANA-NHR-Koppeling/commit/e11524e46f0629a8abd3a1c33685e350b57bc029))
+
+
+### ✅ Tests
+
+* add test scenarios 1 and 2 ([189d0fa](https://github.com/Sudwest-Fryslan/KANA-NHR-Koppeling/commit/189d0fa289bfa1b0b37d0159b4580eae7bfa42db))
+
+
+### 🤖 Build System
+
+* set static framework version ([ab184e6](https://github.com/Sudwest-Fryslan/KANA-NHR-Koppeling/commit/ab184e655767e5413bf407cb12d2b71da59240ad))
+
 ## [1.3.1](https://github.com/Sudwest-Fryslan/KANA-NHR-Koppeling/compare/v1.3.0...v1.3.1) (2023-09-07)
 
 
