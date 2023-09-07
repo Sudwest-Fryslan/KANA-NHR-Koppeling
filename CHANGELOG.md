@@ -1,5 +1,12 @@
 [![conventional commits](https://img.shields.io/badge/conventional%20commits-1.0.0-yellow.svg)](https://conventionalcommits.org) [![semantic versioning](https://img.shields.io/badge/semantic%20versioning-2.0.0-green.svg)](https://semver.org)
 
+## [1.3.1](https://github.com/Sudwest-Fryslan/KANA-NHR-Koppeling/compare/v1.3.0...v1.3.1) (2023-09-07)
+
+
+### 🧑‍💻 Code Refactoring
+
+* remove xml declaration and session key ([f7cb122](https://github.com/Sudwest-Fryslan/KANA-NHR-Koppeling/commit/f7cb1225318ea47c9b3e473d3c3a396333f9fd8f))
+
 ## [1.3.0](https://github.com/Sudwest-Fryslan/KANA-NHR-Koppeling/compare/v1.2.5...v1.3.0) (2023-09-06)
 
 
