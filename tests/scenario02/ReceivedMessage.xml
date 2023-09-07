@@ -1,0 +1,49 @@
+<s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
+	<s:Header>
+		<ActivityId xmlns="http://schemas.microsoft.com/2004/09/ServiceModel/Diagnostics">
+			25a78f07-7be9-402c-8348-7f4331d86325</ActivityId>
+	</s:Header>
+	<s:Body>
+		<vesLa01 xmlns:StUF="http://www.egem.nl/StUF/StUF0301"
+			xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+			xmlns="http://www.egem.nl/StUF/sector/bg/0310">
+			<stuurgegevens>
+				<StUF:berichtcode>La01</StUF:berichtcode>
+				<StUF:zender>
+					<StUF:organisatie>1900</StUF:organisatie>
+					<StUF:applicatie>DDS</StUF:applicatie>
+				</StUF:zender>
+				<StUF:ontvanger>
+					<StUF:organisatie>1900</StUF:organisatie>
+					<StUF:applicatie>KANA</StUF:applicatie>
+				</StUF:ontvanger>
+				<StUF:referentienummer>4af35e86-ee34-4aeb-9a59-d078cbbd375e</StUF:referentienummer>
+				<StUF:tijdstipBericht>20230907111908870</StUF:tijdstipBericht>
+				<StUF:crossRefnummer>00ce3508-d1d</StUF:crossRefnummer>
+				<StUF:entiteittype>VES</StUF:entiteittype>
+			</stuurgegevens>
+			<parameters>
+				<StUF:indicatorVervolgvraag>false</StUF:indicatorVervolgvraag>
+			</parameters>
+			<antwoord>
+				<object StUF:entiteittype="VES">
+					<vestigingsNummer>990000204616</vestigingsNummer>
+					<handelsnaam>Stichting International Voltware Vestiging:9157</handelsnaam>
+					<verblijfsadres>
+						<wpl.woonplaatsNaam>Leeuwarden</wpl.woonplaatsNaam>
+						<aoa.postcode>8921CV</aoa.postcode>
+						<aoa.huisnummer>5</aoa.huisnummer>
+						<aoa.huisletter xsi:nil="true" StUF:noValue="geenWaarde" />
+						<aoa.huisnummertoevoeging xsi:nil="true" StUF:noValue="geenWaarde" />
+					</verblijfsadres>
+					<sub.correspondentieAdres>
+						<wpl.woonplaatsNaam>Zetten</wpl.woonplaatsNaam>
+						<postcode>6671BR</postcode>
+						<sub.postadresType xsi:nil="true" StUF:noValue="geenWaarde" />
+						<sub.postadresNummer xsi:nil="true" StUF:noValue="geenWaarde" />
+					</sub.correspondentieAdres>
+				</object>
+			</antwoord>
+		</vesLa01>
+	</s:Body>
+</s:Envelope>

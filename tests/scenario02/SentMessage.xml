@@ -1,0 +1,21 @@
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ns="http://www.egem.nl/StUF/sector/bg/0310" xmlns:stuf="http://www.egem.nl/StUF/StUF0301" xmlns:xlin="http://www.w3.org/1999/xlink" xmlns:gml="http://www.opengis.net/gml">
+	<soapenv:Header/>
+	<soapenv:Body>
+		<ns2:vesLv01 xmlns:ns2="http://www.egem.nl/StUF/sector/bg/0310" xmlns:ns1="http://www.egem.nl/StUF/StUF0301" xmlns:ns3="http://www.opengis.net/gml" xmlns:ns4="http://www.w3.org/1999/xlink" xmlns:xmime="http://www.w3.org/2005/05/xmlmime" xmlns:ns6="http://www.w3.org/2001/SMIL20/" xmlns:ns7="http://www.w3.org/2001/SMIL20/Language">
+			<ns2:stuurgegevens>
+				<ns1:berichtcode>Lv01</ns1:berichtcode>
+				<ns1:zender>
+					<ns1:organisatie>1900</ns1:organisatie>
+					<ns1:applicatie>KANA</ns1:applicatie>
+				</ns1:zender>
+				<ns1:ontvanger>
+					<ns1:organisatie>1900</ns1:organisatie>
+					<ns1:applicatie>DDS</ns1:applicatie>
+				</ns1:ontvanger>
+				<ns1:referentienummer>00ce3508-d1d</ns1:referentienummer>
+				<ns1:tijdstipBericht>20201222103515762</ns1:tijdstipBericht>
+				<ns1:entiteittype>VES</ns1:entiteittype>
+			</ns2:stuurgegevens>
+		</ns2:vesLv01>
+	</soapenv:Body>
+</soapenv:Envelope>
