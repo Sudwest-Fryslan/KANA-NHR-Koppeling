@@ -1,5 +1,22 @@
 [![conventional commits](https://img.shields.io/badge/conventional%20commits-1.0.0-yellow.svg)](https://conventionalcommits.org) [![semantic versioning](https://img.shields.io/badge/semantic%20versioning-2.0.0-green.svg)](https://semver.org)
 
+## [1.5.0](https://github.com/Sudwest-Fryslan/KANA-NHR-Koppeling/compare/v1.4.1...v1.5.0) (2023-09-11)
+
+
+### 🍕 Features
+
+* ensure graceful exception state on soap fault ([9f2d39d](https://github.com/Sudwest-Fryslan/KANA-NHR-Koppeling/commit/9f2d39df2c8e4b613839e8b17ff157b23a34192d))
+
+
+### 🧑‍💻 Code Refactoring
+
+* disable throwApplicationFaults ([c1a3844](https://github.com/Sudwest-Fryslan/KANA-NHR-Koppeling/commit/c1a3844e86025507b0d7d54b54a470bd04d6b7c0))
+
+
+### ✅ Tests
+
+* Update test scenario names ([68b7c5a](https://github.com/Sudwest-Fryslan/KANA-NHR-Koppeling/commit/68b7c5a304bb26007c75ae0b7289cbd4dbcaa76a))
+
 ## [1.4.1](https://github.com/Sudwest-Fryslan/KANA-NHR-Koppeling/compare/v1.4.0...v1.4.1) (2023-09-11)
 
 
