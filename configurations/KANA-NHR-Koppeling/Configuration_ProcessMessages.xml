@@ -23,6 +23,11 @@
 					charSet="UTF-8" soapAction="http://www.egem.nl/StUF/sector/bg/0310/vesLv01"
 					soap="false" />
 			</SenderPipe>
+
+			<XmlIfPipe name="FaultCheck" xpathExpression="not(//faultcode)">
+				<Forward name="then" path="Success" />
+				<Forward name="else" path="Exception" />
+			</XmlIfPipe>
 		</Pipeline>
 	</Adapter>
 
