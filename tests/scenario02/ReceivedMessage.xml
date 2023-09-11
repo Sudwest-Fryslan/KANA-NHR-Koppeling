@@ -1,49 +1,56 @@
 <s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
 	<s:Header>
 		<ActivityId xmlns="http://schemas.microsoft.com/2004/09/ServiceModel/Diagnostics">
-			25a78f07-7be9-402c-8348-7f4331d86325</ActivityId>
+			016c7a3b-fdd4-4a1f-ba19-b349ef3fab1f</ActivityId>
 	</s:Header>
 	<s:Body>
-		<vesLa01 xmlns:StUF="http://www.egem.nl/StUF/StUF0301"
-			xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-			xmlns="http://www.egem.nl/StUF/sector/bg/0310">
-			<stuurgegevens>
-				<StUF:berichtcode>La01</StUF:berichtcode>
-				<StUF:zender>
-					<StUF:organisatie>1900</StUF:organisatie>
-					<StUF:applicatie>DDS</StUF:applicatie>
-				</StUF:zender>
-				<StUF:ontvanger>
-					<StUF:organisatie>1900</StUF:organisatie>
-					<StUF:applicatie>KANA</StUF:applicatie>
-				</StUF:ontvanger>
-				<StUF:referentienummer>4af35e86-ee34-4aeb-9a59-d078cbbd375e</StUF:referentienummer>
-				<StUF:tijdstipBericht>20230907111908870</StUF:tijdstipBericht>
-				<StUF:crossRefnummer>00ce3508-d1d</StUF:crossRefnummer>
-				<StUF:entiteittype>VES</StUF:entiteittype>
-			</stuurgegevens>
-			<parameters>
-				<StUF:indicatorVervolgvraag>false</StUF:indicatorVervolgvraag>
-			</parameters>
-			<antwoord>
-				<object StUF:entiteittype="VES">
-					<vestigingsNummer>990000204616</vestigingsNummer>
-					<handelsnaam>Stichting International Voltware Vestiging:9157</handelsnaam>
-					<verblijfsadres>
-						<wpl.woonplaatsNaam>Leeuwarden</wpl.woonplaatsNaam>
-						<aoa.postcode>8921CV</aoa.postcode>
-						<aoa.huisnummer>5</aoa.huisnummer>
-						<aoa.huisletter xsi:nil="true" StUF:noValue="geenWaarde" />
-						<aoa.huisnummertoevoeging xsi:nil="true" StUF:noValue="geenWaarde" />
-					</verblijfsadres>
-					<sub.correspondentieAdres>
-						<wpl.woonplaatsNaam>Zetten</wpl.woonplaatsNaam>
-						<postcode>6671BR</postcode>
-						<sub.postadresType xsi:nil="true" StUF:noValue="geenWaarde" />
-						<sub.postadresNummer xsi:nil="true" StUF:noValue="geenWaarde" />
-					</sub.correspondentieAdres>
-				</object>
-			</antwoord>
-		</vesLa01>
+		<s:Fault>
+			<faultcode>s:server</faultcode>
+			<faultstring xml:lang="en-US">Proces voor afhandelen bericht geeft fout (Server).</faultstring>
+			<detail>
+				<StUF:Fo02Bericht xmlns:StUF="http://www.egem.nl/StUF/StUF0301">
+					<StUF:stuurgegevens>
+						<StUF:berichtcode>Fo02</StUF:berichtcode>
+					</StUF:stuurgegevens>
+					<StUF:body>
+						<StUF:code>StUF058</StUF:code>
+						<StUF:plek>server</StUF:plek>
+						<StUF:omschrijving>Proces voor afhandelen bericht geeft fout (Server).</StUF:omschrijving>
+						<StUF:details>Scope ontbreekt in vraagbericht.</StUF:details>
+						<StUF:detailsXML>
+							<ns2:vesLv01 xmlns:ns2="http://www.egem.nl/StUF/sector/bg/0310"
+								xmlns:ns1="http://www.egem.nl/StUF/StUF0301"
+								xmlns:ns3="http://www.opengis.net/gml"
+								xmlns:ns4="http://www.w3.org/1999/xlink"
+								xmlns:xmime="http://www.w3.org/2005/05/xmlmime"
+								xmlns:ns6="http://www.w3.org/2001/SMIL20/"
+								xmlns:ns7="http://www.w3.org/2001/SMIL20/Language">
+								<ns2:stuurgegevens>
+									<ns1:berichtcode>Lv01</ns1:berichtcode>
+									<ns1:zender>
+										<ns1:organisatie>1900</ns1:organisatie>
+										<ns1:applicatie>KANA</ns1:applicatie>
+									</ns1:zender>
+									<ns1:ontvanger>
+										<ns1:organisatie>1900</ns1:organisatie>
+										<ns1:applicatie>DDS</ns1:applicatie>
+									</ns1:ontvanger>
+									<ns1:referentienummer>00ce3508-d1d</ns1:referentienummer>
+									<ns1:tijdstipBericht>20201222103515762</ns1:tijdstipBericht>
+									<ns1:entiteittype>VES</ns1:entiteittype>
+								</ns2:stuurgegevens>
+								<ns2:parameters>
+									<ns1:sortering>1</ns1:sortering>
+									<ns1:indicatorVervolgvraag>false</ns1:indicatorVervolgvraag>
+									<ns1:maximumAantal>100</ns1:maximumAantal>
+									<ns1:indicatorAfnemerIndicatie>false</ns1:indicatorAfnemerIndicatie>
+									<ns1:indicatorAantal>false</ns1:indicatorAantal>
+								</ns2:parameters>
+							</ns2:vesLv01>
+						</StUF:detailsXML>
+					</StUF:body>
+				</StUF:Fo02Bericht>
+			</detail>
+		</s:Fault>
 	</s:Body>
 </s:Envelope>
