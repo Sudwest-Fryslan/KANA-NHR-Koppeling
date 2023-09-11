@@ -15,16 +15,14 @@
 			</Exits>
 
 			<XsltPipe name="AddMissingElement" indentXml="true"
-				styleSheetName="xsl/AddElement.xsl" omitXmlDeclaration="true" />
+				styleSheetName="xsl/AddElement.xsl" omitXmlDeclaration="true"/>
 
 			<SenderPipe name="SendToKana">
-				<WebServiceSender name="SendToKana" url="${kana_endpoint}" methodType="POST"
-					contentType="text/xml"
+				<WebServiceSender name="SendToKana" url="${kana_endpoint}"
+					throwApplicationFaults="false" methodType="POST" contentType="text/xml"
 					charSet="UTF-8" soapAction="http://www.egem.nl/StUF/sector/bg/0310/vesLv01"
 					soap="false" />
 			</SenderPipe>
-
-
 		</Pipeline>
 	</Adapter>
 
