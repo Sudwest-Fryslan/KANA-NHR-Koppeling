@@ -33,7 +33,7 @@
 					charSet="UTF-8"
 					soap="false" />
 				<Param name="soapAction"
-					xpathExpression="concat('http://www.egem.nl/StUF/sector/bg/0310/', local-name(//Body/*[1])"
+					xpathExpression="concat('http://www.egem.nl/StUF/sector/bg/0310/', local-name(//Body/*[1]))"
 					sessionKey="originalMessage" />
 			</SenderPipe>
 
