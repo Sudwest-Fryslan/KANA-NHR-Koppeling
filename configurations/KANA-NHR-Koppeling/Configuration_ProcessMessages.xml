@@ -14,7 +14,8 @@
 				<Exit name="Exception" state="ERROR" />
 			</Exits>
 
-			<!-- <XmlSwitchPipe name="CheckRequestElement" xpathExpression="local-name(//Body/*[1])">
+			<!-- <XmlSwitchPipe name="CheckRequestElement"
+			xpathExpression="local-name(//Body/*[1])">
 				<Forward name="vesLv01" path="vesLv01_AddMissingElement" />
 				<Forward name="vesLk01" path="" />
 				<Forward name="macLv01" path="" />
@@ -29,9 +30,11 @@
 			<SenderPipe name="SendToKana">
 				<WebServiceSender name="SendToKana" url="${kana_endpoint}"
 					throwApplicationFaults="false" methodType="POST" contentType="text/xml"
-					charSet="UTF-8" soapAction="http://www.egem.nl/StUF/sector/bg/0310/{action}"
+					charSet="UTF-8"
 					soap="false" />
-				<Param name="action" xpathExpression="local-name(//Body/*[1])" sessionKey="originalMessage"/>
+				<Param name="soapAction"
+					xpathExpression="concat('http://www.egem.nl/StUF/sector/bg/0310/', local-name(//Body/*[1])"
+					sessionKey="originalMessage" />
 			</SenderPipe>
 
 			<XmlIfPipe name="FaultCheck" xpathExpression="not(//faultcode)">
