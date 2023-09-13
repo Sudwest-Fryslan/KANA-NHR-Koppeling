@@ -1,5 +1,17 @@
 [![conventional commits](https://img.shields.io/badge/conventional%20commits-1.0.0-yellow.svg)](https://conventionalcommits.org) [![semantic versioning](https://img.shields.io/badge/semantic%20versioning-2.0.0-green.svg)](https://semver.org)
 
+## [1.6.1](https://github.com/Sudwest-Fryslan/KANA-NHR-Koppeling/compare/v1.6.0...v1.6.1) (2023-09-13)
+
+
+### 🐛 Bug Fixes
+
+* missing character ([349c69a](https://github.com/Sudwest-Fryslan/KANA-NHR-Koppeling/commit/349c69abcfb0ef0538192cfe4659ed8cb5b9d58b))
+
+
+### 🧑‍💻 Code Refactoring
+
+* relocate soapAction attribute ([b4bbb73](https://github.com/Sudwest-Fryslan/KANA-NHR-Koppeling/commit/b4bbb737e3290437f7efd7533d8e862aa0b0311c))
+
 ## [1.6.0](https://github.com/Sudwest-Fryslan/KANA-NHR-Koppeling/compare/v1.5.0...v1.6.0) (2023-09-13)
 
 
