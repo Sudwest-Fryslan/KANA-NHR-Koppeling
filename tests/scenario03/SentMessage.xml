@@ -1,0 +1,68 @@
+<macLv01 xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<stuurgegevens xmlns="http://www.egem.nl/StUF/sector/bg/0310">
+		<berichtcode xmlns="http://www.egem.nl/StUF/StUF0301">Lv01</berichtcode>
+		<zender xmlns="http://www.egem.nl/StUF/StUF0301">
+			<organisatie>1900</organisatie>
+			<applicatie>KANACRM</applicatie>
+			<gebruiker>KANACRM</gebruiker>
+		</zender>
+		<ontvanger xmlns="http://www.egem.nl/StUF/StUF0301">
+			<organisatie>1900</organisatie>
+			<applicatie>ESB</applicatie>
+		</ontvanger>
+		<referentienummer xmlns="http://www.egem.nl/StUF/StUF0301">
+			038bd1de-ab40-4cfd-b086-de3fdbdc1772</referentienummer>
+		<tijdstipBericht xmlns="http://www.egem.nl/StUF/StUF0301">2022032907052487</tijdstipBericht>
+		<entiteittype xmlns="http://www.egem.nl/StUF/StUF0301">MAC</entiteittype>
+	</stuurgegevens>
+	<parameters xmlns="http://www.egem.nl/StUF/sector/bg/0310">
+		<sortering xmlns="http://www.egem.nl/StUF/StUF0301">1</sortering>
+		<indicatorVervolgvraag xmlns="http://www.egem.nl/StUF/StUF0301">false</indicatorVervolgvraag>
+		<maximumAantal xmlns="http://www.egem.nl/StUF/StUF0301">30</maximumAantal>
+	</parameters>
+	<gelijk d2p1:entiteittype="MAC" xmlns="http://www.egem.nl/StUF/sector/bg/0310" xmlns:d2p1="http://www.egem.nl/StUF/StUF0301">
+		<oefentActiviteitUitIn d2p1:entiteittype="MACVES">
+			<gerelateerde d2p1:entiteittype="VES">
+				<vestigingsNummer>000034833927</vestigingsNummer>
+				<handelsnaam xsi:nil="true"/>
+				<handelsnaamVerkort xsi:nil="true"/>
+				<volgorde xsi:nil="true"/>
+				<datumAanvang xsi:nil="true"/>
+				<datumEinde xsi:nil="true"/>
+				<typeringVestiging xsi:nil="true"/>
+				<sub.telefoonnummer xsi:nil="true"/>
+				<sub.faxnummer xsi:nil="true"/>
+				<sub.emailadres xsi:nil="true"/>
+				<sub.url xsi:nil="true"/>
+				<sub.rekeningnummerBankGiro xsi:nil="true"/>
+				<inOnderzoek xsi:nil="true"/>
+				<d2p1:tijdstipRegistratie xsi:nil="true"/>
+				<heeftAlsHoofdLocatie xsi:nil="true"/>
+			</gerelateerde>
+			<inOnderzoek xsi:nil="true"/>
+			<d2p1:tijdstipRegistratie xsi:nil="true"/>
+		</oefentActiviteitUitIn>
+	</gelijk>
+	<ns2:scope xmlns:ns2="http://www.egem.nl/StUF/sector/bg/0310" xmlns:ns7="http://www.w3.org/2001/SMIL20/Language" xmlns:ns6="http://www.w3.org/2001/SMIL20/" xmlns:xmime="http://www.w3.org/2005/05/xmlmime" xmlns:ns4="http://www.w3.org/1999/xlink" xmlns:ns3="http://www.opengis.net/gml" xmlns:ns1="http://www.egem.nl/StUF/StUF0301">
+		<ns2:object ns1:entiteittype="VES">
+			<ns2:vestigingsNummer xsi:nil="true"/>
+			<ns2:handelsnaam xsi:nil="true"/>
+			<ns2:verblijfsadres>
+				<ns2:wpl.woonplaatsNaam xsi:nil="true"/>
+				<ns2:gor.straatnaam xsi:nil="true"/>
+				<ns2:aoa.postcode xsi:nil="true"/>
+				<ns2:aoa.huisnummer xsi:nil="true"/>
+				<ns2:aoa.huisletter xsi:nil="true"/>
+				<ns2:aoa.huisnummertoevoeging xsi:nil="true"/>
+			</ns2:verblijfsadres>
+			<ns2:sub.correspondentieAdres xsi:type="ns2:CorrespondentieAdresGrp-vraagScope">
+				<ns2:wpl.woonplaatsNaam xsi:nil="true"/>
+				<ns2:postcode xsi:nil="true"/>
+				<ns2:gor.straatnaam xsi:nil="true"/>
+				<ns2:aoa.huisnummer xsi:nil="true"/>
+				<ns2:aoa.huisletter xsi:nil="true"/>
+				<ns2:aoa.huisnummertoevoeging xsi:nil="true"/>
+			</ns2:sub.correspondentieAdres>
+		</ns2:object>
+	</ns2:scope>
+</macLv01>
