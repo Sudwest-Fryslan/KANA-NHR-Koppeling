@@ -1,5 +1,19 @@
 [![conventional commits](https://img.shields.io/badge/conventional%20commits-1.0.0-yellow.svg)](https://conventionalcommits.org) [![semantic versioning](https://img.shields.io/badge/semantic%20versioning-2.0.0-green.svg)](https://semver.org)
 
+## [1.6.0](https://github.com/Sudwest-Fryslan/KANA-NHR-Koppeling/compare/v1.5.0...v1.6.0) (2023-09-13)
+
+
+### 🍕 Features
+
+* add custom ladybug column ([04ab890](https://github.com/Sudwest-Fryslan/KANA-NHR-Koppeling/commit/04ab8907db35c7fb9d70f03b51b7621fdf77bb7a))
+* support new macLv01 action ([5531f0f](https://github.com/Sudwest-Fryslan/KANA-NHR-Koppeling/commit/5531f0fa98e2f1805d6bb0d4c26023bf92bd9f67))
+
+
+### ✅ Tests
+
+* add macLv01 test scenario 03 ([7c15d8f](https://github.com/Sudwest-Fryslan/KANA-NHR-Koppeling/commit/7c15d8fbc7d9698ecb395e1131c8995b265998af))
+* rename test scenarios ([cdfdd66](https://github.com/Sudwest-Fryslan/KANA-NHR-Koppeling/commit/cdfdd66c74cccf746906bcb0de9a6d040e1dd346))
+
 ## [1.5.0](https://github.com/Sudwest-Fryslan/KANA-NHR-Koppeling/compare/v1.4.1...v1.5.0) (2023-09-11)
 
 
