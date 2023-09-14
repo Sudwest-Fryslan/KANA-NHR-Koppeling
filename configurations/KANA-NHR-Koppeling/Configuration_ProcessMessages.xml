@@ -14,26 +14,33 @@
 				<Exit name="Exception" state="ERROR" />
 			</Exits>
 
-			<!-- <XmlSwitchPipe name="CheckRequestElement"
+			<!-- Router -->
+			<XmlSwitchPipe name="CheckRequestElement"
 			xpathExpression="local-name(//Body/*[1])">
-				<Forward name="vesLv01" path="vesLv01_AddMissingElement" />
-				<Forward name="vesLk01" path="" />
-				<Forward name="macLv01" path="" />
-				<Forward name="macLk01" path="" />
-				<Forward name="nnpLv01" path="" />
-				<Forward name="nnpLk01" path="" />
-			</XmlSwitchPipe> -->
+				<Forward name="vesLv01" path="VesAddScope" />
+				<Forward name="macLv01" path="MacAddScope" />
+			</XmlSwitchPipe>
 
-			<XsltPipe name="AddMissingElement" indentXml="true"
-				styleSheetName="xsl/AddElement.xsl" omitXmlDeclaration="true" />
 
-			<SenderPipe name="SendToKana">
-				<WebServiceSender name="SendToKana" url="${kana_endpoint}"
+			<!-- Add element -->
+			<XsltPipe name="VesAddScope" indentXml="true"
+				styleSheetName="xsl/VesAddElement.xsl" omitXmlDeclaration="true">
+				<Forward name="success" path="SendMessage" />
+			</XsltPipe>
+
+			<XsltPipe name="MacAddScope" indentXml="true"
+				styleSheetName="xsl/MacAddElement.xsl" omitXmlDeclaration="true">
+				<Forward name="success" path="SendMessage" />
+			</XsltPipe>
+
+
+			<!-- Message sending -->
+			<SenderPipe name="SendMessage">
+				<WebServiceSender name="SendMessage" url="${target_endpoint}"
 					throwApplicationFaults="false" methodType="POST" contentType="text/xml"
 					charSet="UTF-8"
 					soap="false" />
-				<Param name="soapAction"
-					xpathExpression="concat('http://www.egem.nl/StUF/sector/bg/0310/', local-name(//Body/*[1]))"
+				<Param name="soapAction" xpathExpression="concat('http://www.egem.nl/StUF/sector/bg/0310/', local-name(//Body/*[1]))"
 					sessionKey="originalMessage" />
 			</SenderPipe>
 
