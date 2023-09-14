@@ -16,7 +16,7 @@
 
 			<!-- Router -->
 			<XmlSwitchPipe name="CheckRequestElement"
-			xpathExpression="local-name(//Body/*[1])">
+				xpathExpression="local-name(//Body/*[1])">
 				<Forward name="vesLv01" path="VesAddScope" />
 				<Forward name="macLv01" path="MacAddScope" />
 			</XmlSwitchPipe>
@@ -37,10 +37,10 @@
 			<!-- Message sending -->
 			<SenderPipe name="SendMessage">
 				<WebServiceSender name="SendMessage" url="${target_endpoint}"
-					throwApplicationFaults="false" methodType="POST" contentType="text/xml"
-					charSet="UTF-8"
+					throwApplicationFaults="false" methodType="POST"
 					soap="false" />
-				<Param name="soapAction" xpathExpression="concat('http://www.egem.nl/StUF/sector/bg/0310/', local-name(//Body/*[1]))"
+				<Param name="soapAction"
+					xpathExpression="concat('http://www.egem.nl/StUF/sector/bg/0310/', local-name(//Body/*[1]))"
 					sessionKey="originalMessage" />
 			</SenderPipe>
 
