@@ -1,49 +1,36 @@
-<macLv01 xmlns:xsd="http://www.w3.org/2001/XMLSchema"
-	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-	<stuurgegevens xmlns="http://www.egem.nl/StUF/sector/bg/0310">
-		<berichtcode xmlns="http://www.egem.nl/StUF/StUF0301">Lv01</berichtcode>
-		<zender xmlns="http://www.egem.nl/StUF/StUF0301">
-			<organisatie>1900</organisatie>
-			<applicatie>KANACRM</applicatie>
-			<gebruiker>KANACRM</gebruiker>
-		</zender>
-		<ontvanger xmlns="http://www.egem.nl/StUF/StUF0301">
-			<organisatie>1900</organisatie>
-			<applicatie>ESB</applicatie>
-		</ontvanger>
-		<referentienummer xmlns="http://www.egem.nl/StUF/StUF0301">
-			038bd1de-ab40-4cfd-b086-de3fdbdc1772</referentienummer>
-		<tijdstipBericht xmlns="http://www.egem.nl/StUF/StUF0301">2022032907052487</tijdstipBericht>
-		<entiteittype xmlns="http://www.egem.nl/StUF/StUF0301">MAC</entiteittype>
-	</stuurgegevens>
-	<parameters xmlns="http://www.egem.nl/StUF/sector/bg/0310">
-		<sortering xmlns="http://www.egem.nl/StUF/StUF0301">1</sortering>
-		<indicatorVervolgvraag xmlns="http://www.egem.nl/StUF/StUF0301">false</indicatorVervolgvraag>
-		<maximumAantal xmlns="http://www.egem.nl/StUF/StUF0301">30</maximumAantal>
-	</parameters>
-	<gelijk d2p1:entiteittype="MAC" xmlns:d2p1="http://www.egem.nl/StUF/StUF0301"
-		xmlns="http://www.egem.nl/StUF/sector/bg/0310">
-		<oefentActiviteitUitIn d2p1:entiteittype="MACVES">
-			<gerelateerde d2p1:entiteittype="VES">
-				<vestigingsNummer>000034833927</vestigingsNummer>
-				<handelsnaam xsi:nil="true" />
-				<handelsnaamVerkort xsi:nil="true" />
-				<volgorde xsi:nil="true" />
-				<datumAanvang xsi:nil="true" />
-				<datumEinde xsi:nil="true" />
-				<typeringVestiging xsi:nil="true" />
-				<sub.telefoonnummer xsi:nil="true" />
-				<sub.faxnummer xsi:nil="true" />
-				<sub.emailadres xsi:nil="true" />
-				<sub.url xsi:nil="true" />
-				<sub.rekeningnummerBankGiro xsi:nil="true" />
-				<inOnderzoek xsi:nil="true" />
-				<d2p1:tijdstipRegistratie xsi:nil="true" />
-				<heeftAlsHoofdLocatie xsi:nil="true" />
-			</gerelateerde>
-			<inOnderzoek xsi:nil="true" />
-			<d2p1:tijdstipRegistratie xsi:nil="true" />
-		</oefentActiviteitUitIn>
-	</gelijk>
-</macLv01>
-  
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/"
+	xmlns:ns="http://www.egem.nl/StUF/sector/bg/0310" xmlns:StUF="http://www.egem.nl/StUF/StUF0301"
+	xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:gml="http://www.opengis.net/gml">
+	<soapenv:Header />
+	<soapenv:Body>
+		<ns:macLv01>
+			<ns:stuurgegevens>
+				<StUF:berichtcode>Lv01</StUF:berichtcode>
+				<StUF:zender>
+					<StUF:organisatie>1900</StUF:organisatie>
+					<StUF:applicatie>KANACRM</StUF:applicatie>
+					<StUF:gebruiker>KANACRM</StUF:gebruiker>
+				</StUF:zender>
+				<StUF:ontvanger>
+					<StUF:organisatie>1900</StUF:organisatie>
+					<StUF:applicatie>ESB</StUF:applicatie>
+				</StUF:ontvanger>
+				<StUF:referentienummer>038bd1de-ab40-4cfd-b086-de3fdbdc1772</StUF:referentienummer>
+				<StUF:tijdstipBericht>2022032907052487</StUF:tijdstipBericht>
+				<StUF:entiteittype>MAC</StUF:entiteittype>
+			</ns:stuurgegevens>
+			<ns:parameters>
+				<StUF:sortering>1</StUF:sortering>
+				<StUF:indicatorVervolgvraag>false</StUF:indicatorVervolgvraag>
+				<StUF:maximumAantal>30</StUF:maximumAantal>
+			</ns:parameters>
+			<ns:gelijk StUF:entiteittype="MACVES">
+				<ns:oefentActiviteitUitIn>
+					<ns:gerelateerde>
+						<ns:vestigingsNummer>000034833927</ns:vestigingsNummer>
+					</ns:gerelateerde>
+				</ns:oefentActiviteitUitIn>
+			</ns:gelijk>
+		</ns:macLv01>
+	</soapenv:Body>
+</soapenv:Envelope>
