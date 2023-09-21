@@ -1,5 +1,17 @@
 [![conventional commits](https://img.shields.io/badge/conventional%20commits-1.0.0-yellow.svg)](https://conventionalcommits.org) [![semantic versioning](https://img.shields.io/badge/semantic%20versioning-2.0.0-green.svg)](https://semver.org)
 
+## [1.8.0](https://github.com/Sudwest-Fryslan/KANA-NHR-Koppeling/compare/v1.7.0...v1.8.0) (2023-09-21)
+
+
+### 🍕 Features
+
+* correct incorrect incoming macLv01 message ([319798e](https://github.com/Sudwest-Fryslan/KANA-NHR-Koppeling/commit/319798e00bf11f6e506f5d17c5b3dce48d5e1ebd))
+
+
+### 🧑‍💻 Code Refactoring
+
+* remove console warnings ([51965e8](https://github.com/Sudwest-Fryslan/KANA-NHR-Koppeling/commit/51965e8771a280b731c2ab151a5b2a33c381c702))
+
 ## [1.7.0](https://github.com/Sudwest-Fryslan/KANA-NHR-Koppeling/compare/v1.6.1...v1.7.0) (2023-09-14)
 
 
