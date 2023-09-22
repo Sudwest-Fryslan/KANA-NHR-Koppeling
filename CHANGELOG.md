@@ -1,5 +1,12 @@
 [![conventional commits](https://img.shields.io/badge/conventional%20commits-1.0.0-yellow.svg)](https://conventionalcommits.org) [![semantic versioning](https://img.shields.io/badge/semantic%20versioning-2.0.0-green.svg)](https://semver.org)
 
+## [1.8.1](https://github.com/Sudwest-Fryslan/KANA-NHR-Koppeling/compare/v1.8.0...v1.8.1) (2023-09-22)
+
+
+### 🐛 Bug Fixes
+
+* add correction for incorrect Mac message ([fc13ff0](https://github.com/Sudwest-Fryslan/KANA-NHR-Koppeling/commit/fc13ff02d42786b35a84dfcecd175afaacfe4e38))
+
 ## [1.8.0](https://github.com/Sudwest-Fryslan/KANA-NHR-Koppeling/compare/v1.7.0...v1.8.0) (2023-09-21)
 
 
