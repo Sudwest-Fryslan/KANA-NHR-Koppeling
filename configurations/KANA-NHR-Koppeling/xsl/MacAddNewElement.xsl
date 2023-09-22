@@ -12,18 +12,11 @@
         </xsl:copy>
     </xsl:template>
 
-    <xsl:template match="//ns2:heeftAlsHoofdLocatie">
-        <ns2:heeftAlsHoofdLocatie xsi:nil="true" ns1:entiteittype="VESTGOHFD" />
-    </xsl:template>
-
-    <xsl:template match="ns2:gelijk">
-        <xsl:copy-of select="." />
-        <ns2:scope xmlns:ns2="http://www.egem.nl/StUF/sector/bg/0310">
-            <ns2:object ns1:entiteittype="MAC">
-                <ns2:handelsnaam xsi:nil="true"
-                    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
-            </ns2:object>
-        </ns2:scope>
+    <xsl:template match="//*[1]/*[1]/*[1]/*[3]/*[1]/*[1]">
+        <xsl:copy>
+            <xsl:copy-of select="@* | node()" />
+            <ns2:heeftAlsHoofdLocatie xsi:nil="true" ns1:entiteittype="VESTGOHFD" />
+        </xsl:copy>
     </xsl:template>
 
 </xsl:stylesheet>

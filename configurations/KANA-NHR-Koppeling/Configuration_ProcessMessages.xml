@@ -18,18 +18,24 @@
 			<XmlSwitchPipe name="CheckRequestElement"
 				xpathExpression="local-name(//Body/*[1])">
 				<Forward name="vesLv01" path="VesAddScope" />
-				<Forward name="macLv01" path="MacAddScope" />
+				<Forward name="macLv01" path="RemoveWrongElement" />
 			</XmlSwitchPipe>
 
 
 			<!-- Add element -->
 			<XsltPipe name="VesAddScope" indentXml="true"
-				styleSheetName="xsl/VesAddElement.xsl" omitXmlDeclaration="true">
+				styleSheetName="xsl/VesAddScope.xsl" omitXmlDeclaration="true">
 				<Forward name="success" path="SendMessage" />
 			</XsltPipe>
 
+			<XsltPipe name="RemoveWrongElement" indentXml="true"
+				styleSheetName="xsl/MacRemoveIncorrectElement.xsl" omitXmlDeclaration="true" />
+
+			<XsltPipe name="AddCorrectElement" indentXml="true"
+				styleSheetName="xsl/MacAddNewElement.xsl" omitXmlDeclaration="true" />
+
 			<XsltPipe name="MacAddScope" indentXml="true"
-				styleSheetName="xsl/MacAddElement.xsl" omitXmlDeclaration="true">
+				styleSheetName="xsl/MacAddScope.xsl" omitXmlDeclaration="true">
 				<Forward name="success" path="SendMessage" />
 			</XsltPipe>
 
