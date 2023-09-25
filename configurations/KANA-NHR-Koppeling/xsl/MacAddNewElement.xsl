@@ -12,7 +12,7 @@
         </xsl:copy>
     </xsl:template>
 
-    <xsl:template match="//*[1]/*[1]/*[1]/*[3]/*[1]/*[1]">
+    <xsl:template match="//*[local-name()='gerelateerde']">
         <xsl:copy>
             <xsl:copy-of select="@* | node()" />
             <ns2:heeftAlsHoofdLocatie xsi:nil="true" ns1:entiteittype="VESTGOHFD" />

@@ -12,6 +12,6 @@
         </xsl:copy>
     </xsl:template>
 
-    <xsl:template match="//*[1]/*[1]/*[1]/*[3]/*[1]/*[1]/*[15]" />
+    <xsl:template match="//*[local-name()='heeftAlsHoofdLocatie']" />
 
 </xsl:stylesheet>
