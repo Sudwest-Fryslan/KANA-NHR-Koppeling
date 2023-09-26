@@ -3,8 +3,7 @@
     xmlns:ns1="http://www.egem.nl/StUF/StUF0301" xmlns:ns2="http://www.egem.nl/StUF/sector/bg/0310"
     xmlns:ns3="http://www.opengis.net/gml" xmlns:ns4="http://www.w3.org/1999/xlink"
     xmlns:xmime="http://www.w3.org/2005/05/xmlmime" xmlns:ns6="http://www.w3.org/2001/SMIL20/"
-    xmlns:ns7="http://www.w3.org/2001/SMIL20/Language"
-    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    xmlns:ns7="http://www.w3.org/2001/SMIL20/Language">
 
     <xsl:template match="@* | node()">
         <xsl:copy>
@@ -12,11 +11,10 @@
         </xsl:copy>
     </xsl:template>
 
-    <xsl:template match="//*[local-name()='gerelateerde']">
-        <xsl:copy>
-            <xsl:copy-of select="@* | node()" />
-            <ns2:heeftAlsHoofdLocatie xsi:nil="true" ns1:entiteittype="VESTGOHFD" />
-        </xsl:copy>
+    <xsl:template match="//*[local-name()='aoa.postcode']">
+        <ns2:aoa.postcode>
+            <xsl:value-of
+                select="translate(//*[local-name()='aoa.postcode'], 'abcdefghijklmnopqrstuvwxyz', 'ABCDEFGHIJKLMNOPQRSTUVWXYZ')" />
+        </ns2:aoa.postcode>
     </xsl:template>
-
 </xsl:stylesheet>

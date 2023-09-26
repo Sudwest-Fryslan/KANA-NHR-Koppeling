@@ -17,24 +17,25 @@
 			<!-- Router -->
 			<XmlSwitchPipe name="CheckRequestElement"
 				xpathExpression="local-name(//Body/*[1])">
-				<Forward name="vesLv01" path="VesAddScope" />
-				<Forward name="macLv01" path="RemoveWrongElement" />
+				<Forward name="vesLv01" path="CorrectVesMessage" />
+				<Forward name="macLv01" path="CorrectMacMessage" />
 			</XmlSwitchPipe>
 
 
-			<!-- Add element -->
-			<XsltPipe name="VesAddScope" indentXml="true"
+			<!-- XSLT -->
+			<XsltPipe name="CorrectVesMessage" indentXml="true"
+				styleSheetName="xsl/VesCorrections.xsl" omitXmlDeclaration="true">
+			</XsltPipe>
+
+			<XsltPipe name="AddVesScope" indentXml="true"
 				styleSheetName="xsl/VesAddScope.xsl" omitXmlDeclaration="true">
 				<Forward name="success" path="SendMessage" />
 			</XsltPipe>
 
-			<XsltPipe name="RemoveWrongElement" indentXml="true"
-				styleSheetName="xsl/MacRemoveIncorrectElement.xsl" omitXmlDeclaration="true" />
+			<XsltPipe name="CorrectMacMessage" indentXml="true"
+				styleSheetName="xsl/MacCorrections.xsl" omitXmlDeclaration="true" />
 
-			<XsltPipe name="AddCorrectElement" indentXml="true"
-				styleSheetName="xsl/MacAddNewElement.xsl" omitXmlDeclaration="true" />
-
-			<XsltPipe name="MacAddScope" indentXml="true"
+			<XsltPipe name="AddMacScope" indentXml="true"
 				styleSheetName="xsl/MacAddScope.xsl" omitXmlDeclaration="true">
 				<Forward name="success" path="SendMessage" />
 			</XsltPipe>
