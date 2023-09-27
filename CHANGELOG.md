@@ -1,5 +1,12 @@
 [![conventional commits](https://img.shields.io/badge/conventional%20commits-1.0.0-yellow.svg)](https://conventionalcommits.org) [![semantic versioning](https://img.shields.io/badge/semantic%20versioning-2.0.0-green.svg)](https://semver.org)
 
+## [1.9.2](https://github.com/Sudwest-Fryslan/KANA-NHR-Koppeling/compare/v1.9.1...v1.9.2) (2023-09-27)
+
+
+### 🧑‍💻 Code Refactoring
+
+* add correction for Ves ([ee88f3f](https://github.com/Sudwest-Fryslan/KANA-NHR-Koppeling/commit/ee88f3f74c65517fc2847f9dbdbf7789385f766c))
+
 ## [1.9.1](https://github.com/Sudwest-Fryslan/KANA-NHR-Koppeling/compare/v1.9.0...v1.9.1) (2023-09-27)
 
 
