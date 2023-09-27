@@ -1,5 +1,12 @@
 [![conventional commits](https://img.shields.io/badge/conventional%20commits-1.0.0-yellow.svg)](https://conventionalcommits.org) [![semantic versioning](https://img.shields.io/badge/semantic%20versioning-2.0.0-green.svg)](https://semver.org)
 
+## [1.9.3](https://github.com/Sudwest-Fryslan/KANA-NHR-Koppeling/compare/v1.9.2...v1.9.3) (2023-09-27)
+
+
+### 🐛 Bug Fixes
+
+* improved MAC scope ([7e1c90d](https://github.com/Sudwest-Fryslan/KANA-NHR-Koppeling/commit/7e1c90d6a90a86469913c7a15e914e760cb019d1))
+
 ## [1.9.2](https://github.com/Sudwest-Fryslan/KANA-NHR-Koppeling/compare/v1.9.1...v1.9.2) (2023-09-27)
 
 
