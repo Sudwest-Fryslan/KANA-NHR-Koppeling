@@ -1,5 +1,12 @@
 [![conventional commits](https://img.shields.io/badge/conventional%20commits-1.0.0-yellow.svg)](https://conventionalcommits.org) [![semantic versioning](https://img.shields.io/badge/semantic%20versioning-2.0.0-green.svg)](https://semver.org)
 
+## [1.9.1](https://github.com/Sudwest-Fryslan/KANA-NHR-Koppeling/compare/v1.9.0...v1.9.1) (2023-09-27)
+
+
+### 🐛 Bug Fixes
+
+* incorrect VES scope ([7360150](https://github.com/Sudwest-Fryslan/KANA-NHR-Koppeling/commit/7360150fd8789a64e00457dae2aac1a218e3194a))
+
 ## [1.9.0](https://github.com/Sudwest-Fryslan/KANA-NHR-Koppeling/compare/v1.8.2...v1.9.0) (2023-09-26)
 
 
