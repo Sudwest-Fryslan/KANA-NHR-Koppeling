@@ -12,12 +12,6 @@
         </xsl:copy>
     </xsl:template>
 
-    <!-- <xsl:template match="//*[local-name()='gerelateerde']">
-        <xsl:copy>
-            <xsl:copy-of select="@* | node()" />
-        </xsl:copy>
-    </xsl:template> -->
-
     <xsl:template match="//*[local-name()='heeftAlsHoofdLocatie']">
         <ns2:heeftAlsHoofdLocatie xsi:nil="true" ns1:entiteittype="VESTGOHFD" />
     </xsl:template>
