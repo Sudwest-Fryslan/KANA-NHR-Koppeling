@@ -1,5 +1,12 @@
 [![conventional commits](https://img.shields.io/badge/conventional%20commits-1.0.0-yellow.svg)](https://conventionalcommits.org) [![semantic versioning](https://img.shields.io/badge/semantic%20versioning-2.0.0-green.svg)](https://semver.org)
 
+## [1.11.0](https://github.com/Sudwest-Fryslan/KANA-NHR-Koppeling/compare/v1.10.0...v1.11.0) (2023-10-02)
+
+
+### 🍕 Features
+
+* temporary logic replacement ([9f25d6d](https://github.com/Sudwest-Fryslan/KANA-NHR-Koppeling/commit/9f25d6d761e9f45951feb0afe6a4b2c402d5c9e0))
+
 ## [1.10.0](https://github.com/Sudwest-Fryslan/KANA-NHR-Koppeling/compare/v1.9.3...v1.10.0) (2023-10-02)
 
 
