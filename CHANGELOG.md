@@ -1,5 +1,12 @@
 [![conventional commits](https://img.shields.io/badge/conventional%20commits-1.0.0-yellow.svg)](https://conventionalcommits.org) [![semantic versioning](https://img.shields.io/badge/semantic%20versioning-2.0.0-green.svg)](https://semver.org)
 
+## [1.10.0](https://github.com/Sudwest-Fryslan/KANA-NHR-Koppeling/compare/v1.9.3...v1.10.0) (2023-10-02)
+
+
+### 🍕 Features
+
+* apply new scope to MAC ([ad5450a](https://github.com/Sudwest-Fryslan/KANA-NHR-Koppeling/commit/ad5450aac19eed59b8da9ffc367dc181b6d9400a))
+
 ## [1.9.3](https://github.com/Sudwest-Fryslan/KANA-NHR-Koppeling/compare/v1.9.2...v1.9.3) (2023-09-27)
 
 
