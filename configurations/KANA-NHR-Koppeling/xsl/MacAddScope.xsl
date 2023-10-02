@@ -19,13 +19,121 @@
             xmlns:ns6="http://www.w3.org/2001/SMIL20/"
             xmlns:xmime="http://www.w3.org/2005/05/xmlmime" xmlns:ns4="http://www.w3.org/1999/xlink"
             xmlns:ns3="http://www.opengis.net/gml" xmlns:ns1="http://www.egem.nl/StUF/StUF0301">
-            <ns2:object ns1:entiteittype="MAC" ns1:sleutelOntvangend="" ns1:sleutelVerzendend="">
+            <ns2:object ns1:sleutelVerzendend="" ns1:sleutelOntvangend="" ns1:entiteittype="MAC">
+                <ns2:kvkNummer xsi:nil="true" />
+                <ns2:datumAanvang xsi:nil="true" />
+                <ns2:datumEinde xsi:nil="true" />
                 <ns2:handelsnaam xsi:nil="true" />
                 <ns2:activiteit>
                     <ns2:code xsi:nil="true" />
                     <ns2:omschrijving xsi:nil="true" />
                     <ns2:indicatieHoofdactiviteit xsi:nil="true" />
                 </ns2:activiteit>
+                <ns2:heeftAlsEigenaar ns1:entiteittype="MACRPS">
+                    <ns2:gerelateerde>
+                        <ns2:natuurlijkPersoon ns1:entiteittype="NPS">
+                            <ns2:inp.bsn xsi:nil="true" />
+                            <ns2:geslachtsnaam xsi:nil="true" />
+                            <ns2:voorvoegselGeslachtsnaam xsi:nil="true" />
+                            <ns2:voorletters xsi:nil="true" />
+                            <ns2:aanduidingNaamgebruik xsi:nil="true" />
+                            <ns2:geslachtsnaamPartner xsi:nil="true" />
+                            <ns2:voorvoegselGeslachtsnaamPartner xsi:nil="true" />
+                            <ns2:geslachtsnaamAanschrijving xsi:nil="true" />
+                            <ns2:verblijfsadres>
+                                <ns2:aoa.identificatie xsi:nil="true" />
+                                <ns2:wpl.woonplaatsNaam xsi:nil="true" />
+                                <ns2:gor.openbareRuimteNaam xsi:nil="true" />
+                                <ns2:aoa.postcode xsi:nil="true" />
+                                <ns2:aoa.huisnummer xsi:nil="true" />
+                                <ns2:aoa.huisletter xsi:nil="true" />
+                                <ns2:aoa.huisnummertoevoeging xsi:nil="true" />
+                            </ns2:verblijfsadres>
+                            <ns2:sub.verblijfBuitenland>
+                                <ns2:lnd.landcode xsi:nil="true" />
+                                <ns2:lnd.landnaam xsi:nil="true" />
+                                <ns2:sub.adresBuitenland1 xsi:nil="true" />
+                                <ns2:sub.adresBuitenland2 xsi:nil="true" />
+                                <ns2:sub.adresBuitenland3 xsi:nil="true" />
+                            </ns2:sub.verblijfBuitenland>
+                            <ns2:sub.correspondentieAdres>
+                                <ns2:typering xsi:nil="true" />
+                                <ns2:wpl.woonplaatsNaam xsi:nil="true" />
+                                <ns2:postcode xsi:nil="true" />
+                                <ns2:aoa.identificatie xsi:nil="true" />
+                                <ns2:wpl.identificatie xsi:nil="true" />
+                                <ns2:opr.identificatie xsi:nil="true" />
+                                <ns2:gor.openbareRuimteNaam xsi:nil="true" />
+                                <ns2:gor.straatnaam xsi:nil="true" />
+                                <ns2:aoa.huisnummer xsi:nil="true" />
+                                <ns2:aoa.huisletter xsi:nil="true" />
+                                <ns2:aoa.huisnummertoevoeging xsi:nil="true" />
+                                <ns2:sub.postadresType xsi:nil="true" />
+                                <ns2:sub.postadresNummer xsi:nil="true" />
+                            </ns2:sub.correspondentieAdres>
+                            <ns2:sub.telefoonnummer xsi:nil="true" />
+                            <ns2:sub.faxnummer xsi:nil="true" />
+                            <ns2:sub.emailadres xsi:nil="true" />
+                            <ns2:sub.rekeningnummerBankGiro xsi:nil="true" />
+                        </ns2:natuurlijkPersoon>
+                        <ns2:nietNatuurlijkPersoon ns1:entiteittype="NNP">
+                            <ns2:inn.nnpId xsi:nil="true" />
+                            <ns2:ann.identificatie xsi:nil="true" />
+                            <ns2:sub.typering xsi:nil="true" />
+                            <ns2:statutaireNaam xsi:nil="true" />
+                            <ns2:inn.statutaireZetel xsi:nil="true" />
+                            <ns2:datumAanvang xsi:nil="true" />
+                            <ns2:inn.datumVoortzetting xsi:nil="true" />
+                            <ns2:datumEinde xsi:nil="true" />
+                            <ns2:sub.correspondentieAdres>
+                                <ns2:typering xsi:nil="true" />
+                                <ns2:wpl.woonplaatsNaam xsi:nil="true" />
+                                <ns2:postcode xsi:nil="true" />
+                                <ns2:aoa.identificatie xsi:nil="true" />
+                                <ns2:wpl.identificatie xsi:nil="true" />
+                                <ns2:opr.identificatie xsi:nil="true" />
+                                <ns2:gor.openbareRuimteNaam xsi:nil="true" />
+                                <ns2:gor.straatnaam xsi:nil="true" />
+                                <ns2:aoa.huisnummer xsi:nil="true" />
+                                <ns2:aoa.huisletter xsi:nil="true" />
+                                <ns2:aoa.huisnummertoevoeging xsi:nil="true" />
+                                <ns2:sub.postadresType xsi:nil="true" />
+                                <ns2:sub.postadresNummer xsi:nil="true" />
+                            </ns2:sub.correspondentieAdres>
+                            <ns2:bezoekadres>
+                                <ns2:aoa.identificatie xsi:nil="true" />
+                                <ns2:wpl.woonplaatsNaam xsi:nil="true" />
+                                <ns2:gor.openbareRuimteNaam xsi:nil="true" />
+                                <ns2:aoa.postcode xsi:nil="true" />
+                                <ns2:aoa.huisnummer xsi:nil="true" />
+                                <ns2:aoa.huisletter xsi:nil="true" />
+                                <ns2:aoa.huisnummertoevoeging xsi:nil="true" />
+                            </ns2:bezoekadres>
+                            <ns2:sub.verblijfBuitenland>
+                                <ns2:lnd.landcode xsi:nil="true" />
+                                <ns2:lnd.landnaam xsi:nil="true" />
+                                <ns2:sub.adresBuitenland1 xsi:nil="true" />
+                                <ns2:sub.adresBuitenland2 xsi:nil="true" />
+                                <ns2:sub.adresBuitenland3 xsi:nil="true" />
+                            </ns2:sub.verblijfBuitenland>
+                            <ns2:sub.telefoonnummer xsi:nil="true" />
+                            <ns2:sub.faxnummer xsi:nil="true" />
+                            <ns2:sub.emailadres xsi:nil="true" />
+                            <ns2:sub.url xsi:nil="true" />
+                            <ns2:sub.rekeningnummerBankGiro xsi:nil="true" />
+                        </ns2:nietNatuurlijkPersoon>
+                    </ns2:gerelateerde>
+                </ns2:heeftAlsEigenaar>
+                <ns2:oefentActiviteitUitIn ns1:entiteittype="MACVES">
+                    <ns2:gerelateerde ns1:entiteittype="VES">
+                        <ns2:vestigingsNummer xsi:nil="true" />
+                        <ns2:activiteit>
+                            <ns2:code xsi:nil="true" />
+                            <ns2:omschrijving xsi:nil="true" />
+                            <ns2:indicatieHoofdactiviteit xsi:nil="true" />
+                        </ns2:activiteit>
+                    </ns2:gerelateerde>
+                </ns2:oefentActiviteitUitIn>
             </ns2:object>
         </ns2:scope>
     </xsl:template>
