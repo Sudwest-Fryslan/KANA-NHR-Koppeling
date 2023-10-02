@@ -1,5 +1,12 @@
 [![conventional commits](https://img.shields.io/badge/conventional%20commits-1.0.0-yellow.svg)](https://conventionalcommits.org) [![semantic versioning](https://img.shields.io/badge/semantic%20versioning-2.0.0-green.svg)](https://semver.org)
 
+## [1.11.1](https://github.com/Sudwest-Fryslan/KANA-NHR-Koppeling/compare/v1.11.0...v1.11.1) (2023-10-02)
+
+
+### 🐛 Bug Fixes
+
+* correct MAC dataland scope ([3a9e92f](https://github.com/Sudwest-Fryslan/KANA-NHR-Koppeling/commit/3a9e92f397a8a792edbfa3d55251575fbd54b6d4))
+
 ## [1.11.0](https://github.com/Sudwest-Fryslan/KANA-NHR-Koppeling/compare/v1.10.0...v1.11.0) (2023-10-02)
 
 
