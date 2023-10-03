@@ -29,7 +29,7 @@
 
 			<XsltPipe name="AddVesScope" indentXml="true"
 				styleSheetName="xsl/VesAddScope.xsl" omitXmlDeclaration="true">
-				<Forward name="success" path="SendMessage" />
+				<Forward name="success" path="Success" />
 			</XsltPipe>
 
 			<XsltPipe name="CorrectMacMessage" indentXml="true"
@@ -37,7 +37,7 @@
 
 			<XsltPipe name="AddMacScope" indentXml="true"
 				styleSheetName="xsl/MacAddScope.xsl" omitXmlDeclaration="true">
-				<Forward name="success" path="SendMessage" />
+				<Forward name="success" path="Success" />
 			</XsltPipe>
 
 
