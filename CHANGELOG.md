@@ -1,5 +1,12 @@
 [![conventional commits](https://img.shields.io/badge/conventional%20commits-1.0.0-yellow.svg)](https://conventionalcommits.org) [![semantic versioning](https://img.shields.io/badge/semantic%20versioning-2.0.0-green.svg)](https://semver.org)
 
+## [1.11.2](https://github.com/Sudwest-Fryslan/KANA-NHR-Koppeling/compare/v1.11.1...v1.11.2) (2023-10-03)
+
+
+### 🧑‍💻 Code Refactoring
+
+* force early end ([779b43b](https://github.com/Sudwest-Fryslan/KANA-NHR-Koppeling/commit/779b43b107e6b3a91e6fc049ffb124bfbf3fff16))
+
 ## [1.11.1](https://github.com/Sudwest-Fryslan/KANA-NHR-Koppeling/compare/v1.11.0...v1.11.1) (2023-10-02)
 
 
