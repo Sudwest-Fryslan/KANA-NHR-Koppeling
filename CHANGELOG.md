@@ -1,5 +1,12 @@
 [![conventional commits](https://img.shields.io/badge/conventional%20commits-1.0.0-yellow.svg)](https://conventionalcommits.org) [![semantic versioning](https://img.shields.io/badge/semantic%20versioning-2.0.0-green.svg)](https://semver.org)
 
+## [1.12.0](https://github.com/Sudwest-Fryslan/KANA-NHR-Koppeling/compare/v1.11.2...v1.12.0) (2023-10-04)
+
+
+### 🍕 Features
+
+* set new static answer message ([acd58f3](https://github.com/Sudwest-Fryslan/KANA-NHR-Koppeling/commit/acd58f331bf104727e53b3166e6f9e258582246f))
+
 ## [1.11.2](https://github.com/Sudwest-Fryslan/KANA-NHR-Koppeling/compare/v1.11.1...v1.11.2) (2023-10-03)
 
 
