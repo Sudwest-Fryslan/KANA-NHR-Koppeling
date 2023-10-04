@@ -8,85 +8,317 @@
 
     <xsl:template match="/">
         <s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
-            <s:Header>
-                <Action s:mustUnderstand="1"
-                    xmlns="http://schemas.microsoft.com/ws/2005/05/addressing/none">
-                    http://www.egem.nl/StUF/sector/bg/0310/macLk01</Action>
-            </s:Header>
-            <s:Body>
-                <BG:macLk01 xmlns:BG="http://www.egem.nl/StUF/sector/bg/0310"
-                    xmlns:msxsl="urn:schemas-microsoft-com:xslt"
-                    xmlns:xlink="http://www.w3.org/1999/xlink"
-                    xmlns:StUF="http://www.egem.nl/StUF/StUF0301">
-                    <BG:stuurgegevens>
-                        <berichtcode xmlns="http://www.egem.nl/StUF/StUF0301">Lk01</berichtcode>
-                        <StUF:zender>
-                            <organisatie xmlns="http://www.egem.nl/StUF/StUF0301">dataland</organisatie>
-                            <applicatie xmlns="http://www.egem.nl/StUF/StUF0301">ESB</applicatie>
-                        </StUF:zender>
-                        <StUF:ontvanger>
-                            <organisatie xmlns="http://www.egem.nl/StUF/StUF0301">0546</organisatie>
-                            <applicatie xmlns="http://www.egem.nl/StUF/StUF0301">ESB</applicatie>
-                        </StUF:ontvanger>
-                        <referentienummer xmlns="http://www.egem.nl/StUF/StUF0301">959166628845</referentienummer>
-                        <tijdstipBericht xmlns="http://www.egem.nl/StUF/StUF0301">2015021109581830</tijdstipBericht>
+            <s:Body xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+                <macLa01 xmlns="http://www.egem.nl/StUF/sector/bg/0310">
+                    <stuurgegevens>
+                        <berichtcode xmlns="http://www.egem.nl/StUF/StUF0301">La01</berichtcode>
+                        <zender xmlns="http://www.egem.nl/StUF/StUF0301">
+                            <organisatie>0556</organisatie>
+                            <applicatie>ESBMSS</applicatie>
+                        </zender>
+                        <ontvanger xmlns="http://www.egem.nl/StUF/StUF0301">
+                            <organisatie>0556</organisatie>
+                            <applicatie>ESBMSS</applicatie>
+                        </ontvanger>
+                        <referentienummer xmlns="http://www.egem.nl/StUF/StUF0301">833488647375</referentienummer>
+                        <tijdstipBericht xmlns="http://www.egem.nl/StUF/StUF0301">20150508142849947</tijdstipBericht>
+                        <crossRefnummer xmlns="http://www.egem.nl/StUF/StUF0301">TestLeendert</crossRefnummer>
                         <entiteittype xmlns="http://www.egem.nl/StUF/StUF0301">MAC</entiteittype>
-                    </BG:stuurgegevens>
-                    <BG:parameters>
-                        <mutatiesoort xmlns="http://www.egem.nl/StUF/StUF0301">T</mutatiesoort>
-                        <indicatorOvername xmlns="http://www.egem.nl/StUF/StUF0301">V</indicatorOvername>
-                    </BG:parameters>
-                    <BG:object p6:entiteittype="MAC" p6:sleutelVerzendend="01056269"
-                        p6:sleutelGegevensbeheer="0" xmlns:p6="http://www.egem.nl/StUF/StUF0301">
-                        <BG:kvkNummer>01056269</BG:kvkNummer>
-                        <BG:authentiek p6:metagegeven="true" p6:noValue="geenWaarde">J</BG:authentiek>
-                        <BG:datumAanvang>19900101</BG:datumAanvang>
-                        <BG:datumVoortzetting p6:noValue="geenWaarde">0</BG:datumVoortzetting>
-                        <BG:datumEinde p6:noValue="geenWaarde">0</BG:datumEinde>
-                        <BG:handelsnaamVerkort p6:noValue="geenWaarde"></BG:handelsnaamVerkort>
-                        <BG:handelsnaam>Voegbedrijf Boonstra</BG:handelsnaam>
-                        <BG:volgorde>0</BG:volgorde>
-                        <BG:inOnderzoek p6:metagegeven="true" p6:noValue="geenWaarde">J</BG:inOnderzoek>
-                        <p6:tijdvakGeldigheid xmlns="http://www.egem.nl/StUF/sector/bg/0310">
-                            <p6:beginGeldigheid p6:noValue="geenWaarde" xsi:nil="true"
-                                xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"></p6:beginGeldigheid>
-                            <p6:eindGeldigheid p6:noValue="geenWaarde" xsi:nil="true"
-                                xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"></p6:eindGeldigheid>
-                        </p6:tijdvakGeldigheid>
-                        <p6:tijdstipRegistratie xsi:nil="true"
-                            xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-                            xmlns="http://www.egem.nl/StUF/sector/bg/0310"></p6:tijdstipRegistratie>
-                        <p6:extraElementen xmlns="http://www.egem.nl/StUF/sector/bg/0310">
-                            <p6:extraElement p6:noValue="geenWaarde" naam="klasseWerkzamePersonen"
-                                xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"></p6:extraElement>
-                            <p6:extraElement p6:noValue="geenWaarde" naam="dossiernummerMoeder"
-                                xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"></p6:extraElement>
-                            <p6:extraElement naam="is_temporary">N</p6:extraElement>
-                        </p6:extraElementen>
-                        <BG:heeftAlsEigenaar p6:entiteittype="MACRPS">
-                            <BG:gerelateerde>
-                                <BG:nietNatuurlijkPersoon p6:entiteittype="NNP">
-                                    <BG:inn.nnpId>804097513</BG:inn.nnpId>
-                                    <BG:statutaireNaam></BG:statutaireNaam>
-                                    <BG:inn.rechtsvorm></BG:inn.rechtsvorm>
-                                    <BG:datumAanvang p6:noValue="geenWaarde">0</BG:datumAanvang>
-                                    <BG:datumEinde p6:noValue="geenWaarde">0</BG:datumEinde>
-                                    <BG:sub.telefoonnummer></BG:sub.telefoonnummer>
-                                    <BG:sub.faxnummer></BG:sub.faxnummer>
-                                    <BG:sub.emailadres></BG:sub.emailadres>
-                                    <BG:sub.rekeningnummerBankGiro></BG:sub.rekeningnummerBankGiro>
-                                    <p6:extraElementen xsi:nil="true"
-                                        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-                                        xmlns="http://www.egem.nl/StUF/sector/bg/0310"></p6:extraElementen>
-                                </BG:nietNatuurlijkPersoon>
-                            </BG:gerelateerde>
-                            <BG:inOnderzoek></BG:inOnderzoek>
-                            <p6:tijdstipRegistratie xsi:nil="true"
-                                xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-                                xmlns="http://www.egem.nl/StUF/sector/bg/0310"></p6:tijdstipRegistratie>
-                        </BG:heeftAlsEigenaar>
-                    </BG:object>
-                </BG:macLk01>
+                    </stuurgegevens>
+                    <parameters>
+                        <aantalVoorkomens xmlns="http://www.egem.nl/StUF/StUF0301">1</aantalVoorkomens>
+                    </parameters>
+                    <antwoord>
+                        <object a:entiteittype="MAC" a:sleutelVerzendend="34130227"
+                            a:sleutelGegevensbeheer="34130227"
+                            xmlns:a="http://www.egem.nl/StUF/StUF0301">
+                            <kvkNummer>34130227</kvkNummer>
+                            <authentiek xsi:nil="true" />
+                            <datumAanvang>20000523</datumAanvang>
+                            <datumVoortzetting xsi:nil="true" />
+                            <datumEinde>20120314</datumEinde>
+                            <handelsnaam>CasaBella B.V.</handelsnaam>
+                            <activiteit>
+                                <code>6630</code>
+                                <omschrijving>Vermogensbeheer</omschrijving>
+                                <indicatieHoofdactiviteit>J</indicatieHoofdactiviteit>
+                                <volgorde xsi:nil="true" />
+                            </activiteit>
+                            <a:tijdstipRegistratie>11111104120150111</a:tijdstipRegistratie>
+                            <heeftAlsEigenaar a:entiteittype="MACRPS">
+                                <gerelateerde>
+                                    <nietNatuurlijkPersoon a:entiteittype="NNP">
+                                        <inn.nnpId>809103084</inn.nnpId>
+                                        <sub.typering xsi:nil="true" />
+                                        <statutaireNaam>CasaBella B.V.</statutaireNaam>
+                                        <inn.rechtsvorm>BeslotenVennootschap</inn.rechtsvorm>
+                                        <inn.statutaireZetel>Badhoevedorp</inn.statutaireZetel>
+                                        <datumAanvang>20000523</datumAanvang>
+                                        <inn.datumVoortzetting xsi:nil="true" />
+                                        <datumEinde>20120314</datumEinde>
+                                        <bezoekadres>
+                                            <aoa.identificatie>0394200000014257</aoa.identificatie>
+                                            <authentiek xsi:nil="true" />
+                                            <wpl.identificatie xsi:nil="true" />
+                                            <wpl.woonplaatsNaam>Badhoevedorp</wpl.woonplaatsNaam>
+                                            <gor.identificatie xsi:nil="true" />
+                                            <opr.identificatie xsi:nil="true" />
+                                            <gor.openbareRuimteNaam>Sloterweg</gor.openbareRuimteNaam>
+                                            <gor.straatnaam xsi:nil="true" />
+                                            <aoa.postcode>1171CM</aoa.postcode>
+                                            <aoa.huisnummer>187</aoa.huisnummer>
+                                            <aoa.huisletter xsi:nil="true" />
+                                            <aoa.huisnummertoevoeging xsi:nil="true" />
+                                            <inp.locatiebeschrijving xsi:nil="true" />
+                                            <begindatumVerblijf xsi:nil="true" />
+                                        </bezoekadres>
+                                        <sub.telefoonnummer xsi:nil="true" />
+                                        <sub.faxnummer xsi:nil="true" />
+                                        <sub.emailadres xsi:nil="true" />
+                                        <sub.url xsi:nil="true" />
+                                        <sub.rekeningnummerBankGiro xsi:nil="true" />
+                                        <a:tijdstipRegistratie xsi:nil="true" />
+                                        <inn.heeftAlsFunctionaris a:entiteittype="NNPRPS">
+                                            <gerelateerde>
+                                                <natuurlijkPersoon a:entiteittype="NPS">
+                                                    <inp.bsn>031202469</inp.bsn>
+                                                    <sub.typering xsi:nil="true" />
+                                                    <inp.a-nummer xsi:nil="true" />
+                                                    <geslachtsnaam>Puik</geslachtsnaam>
+                                                    <voorvoegselGeslachtsnaam xsi:nil="true" />
+                                                    <voorletters>W.</voorletters>
+                                                    <voornamen>Willy</voornamen>
+                                                    <aanduidingNaamgebruik>E</aanduidingNaamgebruik>
+                                                    <geslachtsnaamPartner>Waal</geslachtsnaamPartner>
+                                                    <voorvoegselGeslachtsnaamPartner>de</voorvoegselGeslachtsnaamPartner>
+                                                    <aanhefAanschrijving xsi:nil="true" />
+                                                    <voornamenAanschrijving xsi:nil="true" />
+                                                    <geslachtsnaamAanschrijving xsi:nil="true" />
+                                                    <adellijkeTitelPredikaat xsi:nil="true" />
+                                                    <geslachtsaanduiding>M</geslachtsaanduiding>
+                                                    <geboortedatum>19460122</geboortedatum>
+                                                    <inp.geboorteplaats>Hoogeveen</inp.geboorteplaats>
+                                                    <inp.geboorteLand>6030</inp.geboorteLand>
+                                                    <overlijdensdatum xsi:nil="true" />
+                                                    <inp.overlijdenplaats xsi:nil="true" />
+                                                    <inp.overlijdenLand xsi:nil="true" />
+                                                    <inp.adresHerkomst xsi:nil="true" />
+                                                    <sub.telefoonnummer xsi:nil="true" />
+                                                    <sub.faxnummer xsi:nil="true" />
+                                                    <sub.emailadres xsi:nil="true" />
+                                                    <sub.url xsi:nil="true" />
+                                                    <sub.rekeningnummerBankGiro xsi:nil="true" />
+                                                    <inp.burgerlijkeStaat xsi:nil="true" />
+                                                    <inp.gemeenteVanInschrijving xsi:nil="true" />
+                                                    <inp.datumInschrijving xsi:nil="true" />
+                                                    <vbt.aanduidingVerblijfstitel xsi:nil="true" />
+                                                    <ing.datumVerkrijgingVerblijfstitel
+                                                        xsi:nil="true" />
+                                                    <ing.datumVerliesVerblijfstitel xsi:nil="true" />
+                                                    <inp.datumVestigingInNederland xsi:nil="true" />
+                                                    <inp.immigratieLand xsi:nil="true" />
+                                                    <inp.datumVertrekUitNederland xsi:nil="true" />
+                                                    <inp.emigratieLand xsi:nil="true" />
+                                                    <inp.signaleringReisdocument xsi:nil="true" />
+                                                    <inp.aanduidingBijzonderNederlanderschap
+                                                        xsi:nil="true" />
+                                                    <inp.buitenlandsReisdocument xsi:nil="true" />
+                                                    <ing.aanduidingEuropeesKiesrecht xsi:nil="true" />
+                                                    <ing.aanduidingUitgeslotenKiesrecht
+                                                        xsi:nil="true" />
+                                                    <ing.indicatieGezagMinderjarige xsi:nil="true" />
+                                                    <ing.indicatieCurateleRegister xsi:nil="true" />
+                                                    <inp.datumOpschortingBijhouding xsi:nil="true" />
+                                                    <inp.redenOpschortingBijhouding xsi:nil="true" />
+                                                    <inp.indicatieGeheim xsi:nil="true" />
+                                                    <ing.indicatieBlokkering xsi:nil="true" />
+                                                    <a:tijdstipRegistratie>11111104120150111</a:tijdstipRegistratie>
+                                                </natuurlijkPersoon>
+                                            </gerelateerde>
+                                            <functionarisType>Bestuurder</functionarisType>
+                                            <a:tijdstipRegistratie xsi:nil="true" />
+                                        </inn.heeftAlsFunctionaris>
+                                        <inn.heeftAlsFunctionaris a:entiteittype="NNPRPS">
+                                            <gerelateerde>
+                                                <natuurlijkPersoon a:entiteittype="NPS">
+                                                    <inp.bsn>031202469</inp.bsn>
+                                                    <sub.typering xsi:nil="true" />
+                                                    <inp.a-nummer xsi:nil="true" />
+                                                    <geslachtsnaam>Puik</geslachtsnaam>
+                                                    <voorvoegselGeslachtsnaam xsi:nil="true" />
+                                                    <voorletters>W.</voorletters>
+                                                    <voornamen>Willy</voornamen>
+                                                    <aanduidingNaamgebruik>E</aanduidingNaamgebruik>
+                                                    <geslachtsnaamPartner>Waal</geslachtsnaamPartner>
+                                                    <voorvoegselGeslachtsnaamPartner>de</voorvoegselGeslachtsnaamPartner>
+                                                    <aanhefAanschrijving xsi:nil="true" />
+                                                    <voornamenAanschrijving xsi:nil="true" />
+                                                    <geslachtsnaamAanschrijving xsi:nil="true" />
+                                                    <adellijkeTitelPredikaat xsi:nil="true" />
+                                                    <geslachtsaanduiding>M</geslachtsaanduiding>
+                                                    <geboortedatum>19460122</geboortedatum>
+                                                    <inp.geboorteplaats>Hoogeveen</inp.geboorteplaats>
+                                                    <inp.geboorteLand>6030</inp.geboorteLand>
+                                                    <overlijdensdatum xsi:nil="true" />
+                                                    <inp.overlijdenplaats xsi:nil="true" />
+                                                    <inp.overlijdenLand xsi:nil="true" />
+                                                    <inp.adresHerkomst xsi:nil="true" />
+                                                    <sub.telefoonnummer xsi:nil="true" />
+                                                    <sub.faxnummer xsi:nil="true" />
+                                                    <sub.emailadres xsi:nil="true" />
+                                                    <sub.url xsi:nil="true" />
+                                                    <sub.rekeningnummerBankGiro xsi:nil="true" />
+                                                    <inp.burgerlijkeStaat xsi:nil="true" />
+                                                    <inp.gemeenteVanInschrijving xsi:nil="true" />
+                                                    <inp.datumInschrijving xsi:nil="true" />
+                                                    <vbt.aanduidingVerblijfstitel xsi:nil="true" />
+                                                    <ing.datumVerkrijgingVerblijfstitel
+                                                        xsi:nil="true" />
+                                                    <ing.datumVerliesVerblijfstitel xsi:nil="true" />
+                                                    <inp.datumVestigingInNederland xsi:nil="true" />
+                                                    <inp.immigratieLand xsi:nil="true" />
+                                                    <inp.datumVertrekUitNederland xsi:nil="true" />
+                                                    <inp.emigratieLand xsi:nil="true" />
+                                                    <inp.signaleringReisdocument xsi:nil="true" />
+                                                    <inp.aanduidingBijzonderNederlanderschap
+                                                        xsi:nil="true" />
+                                                    <inp.buitenlandsReisdocument xsi:nil="true" />
+                                                    <ing.aanduidingEuropeesKiesrecht xsi:nil="true" />
+                                                    <ing.aanduidingUitgeslotenKiesrecht
+                                                        xsi:nil="true" />
+                                                    <ing.indicatieGezagMinderjarige xsi:nil="true" />
+                                                    <ing.indicatieCurateleRegister xsi:nil="true" />
+                                                    <inp.datumOpschortingBijhouding xsi:nil="true" />
+                                                    <inp.redenOpschortingBijhouding xsi:nil="true" />
+                                                    <inp.indicatieGeheim xsi:nil="true" />
+                                                    <ing.indicatieBlokkering xsi:nil="true" />
+                                                    <a:tijdstipRegistratie>11111104120150111</a:tijdstipRegistratie>
+                                                </natuurlijkPersoon>
+                                            </gerelateerde>
+                                            <functionarisType>EnigAandeelhouder</functionarisType>
+                                            <a:tijdstipRegistratie xsi:nil="true" />
+                                        </inn.heeftAlsFunctionaris>
+                                        <inn.heeftAlsFunctionaris a:entiteittype="NNPRPS">
+                                            <gerelateerde>
+                                                <natuurlijkPersoon a:entiteittype="NPS">
+                                                    <inp.bsn>031202469</inp.bsn>
+                                                    <sub.typering xsi:nil="true" />
+                                                    <inp.a-nummer xsi:nil="true" />
+                                                    <geslachtsnaam>Puik</geslachtsnaam>
+                                                    <voorvoegselGeslachtsnaam xsi:nil="true" />
+                                                    <voorletters>W.</voorletters>
+                                                    <voornamen>Willy</voornamen>
+                                                    <aanduidingNaamgebruik>E</aanduidingNaamgebruik>
+                                                    <geslachtsnaamPartner>Waal</geslachtsnaamPartner>
+                                                    <voorvoegselGeslachtsnaamPartner>de</voorvoegselGeslachtsnaamPartner>
+                                                    <aanhefAanschrijving xsi:nil="true" />
+                                                    <voornamenAanschrijving xsi:nil="true" />
+                                                    <geslachtsnaamAanschrijving xsi:nil="true" />
+                                                    <adellijkeTitelPredikaat xsi:nil="true" />
+                                                    <geslachtsaanduiding>M</geslachtsaanduiding>
+                                                    <geboortedatum>19460122</geboortedatum>
+                                                    <inp.geboorteplaats>Hoogeveen</inp.geboorteplaats>
+                                                    <inp.geboorteLand>6030</inp.geboorteLand>
+                                                    <overlijdensdatum xsi:nil="true" />
+                                                    <inp.overlijdenplaats xsi:nil="true" />
+                                                    <inp.overlijdenLand xsi:nil="true" />
+                                                    <inp.adresHerkomst xsi:nil="true" />
+                                                    <sub.telefoonnummer xsi:nil="true" />
+                                                    <sub.faxnummer xsi:nil="true" />
+                                                    <sub.emailadres xsi:nil="true" />
+                                                    <sub.url xsi:nil="true" />
+                                                    <sub.rekeningnummerBankGiro xsi:nil="true" />
+                                                    <inp.burgerlijkeStaat xsi:nil="true" />
+                                                    <inp.gemeenteVanInschrijving xsi:nil="true" />
+                                                    <inp.datumInschrijving xsi:nil="true" />
+                                                    <vbt.aanduidingVerblijfstitel xsi:nil="true" />
+                                                    <ing.datumVerkrijgingVerblijfstitel
+                                                        xsi:nil="true" />
+                                                    <ing.datumVerliesVerblijfstitel xsi:nil="true" />
+                                                    <inp.datumVestigingInNederland xsi:nil="true" />
+                                                    <inp.immigratieLand xsi:nil="true" />
+                                                    <inp.datumVertrekUitNederland xsi:nil="true" />
+                                                    <inp.emigratieLand xsi:nil="true" />
+                                                    <inp.signaleringReisdocument xsi:nil="true" />
+                                                    <inp.aanduidingBijzonderNederlanderschap
+                                                        xsi:nil="true" />
+                                                    <inp.buitenlandsReisdocument xsi:nil="true" />
+                                                    <ing.aanduidingEuropeesKiesrecht xsi:nil="true" />
+                                                    <ing.aanduidingUitgeslotenKiesrecht
+                                                        xsi:nil="true" />
+                                                    <ing.indicatieGezagMinderjarige xsi:nil="true" />
+                                                    <ing.indicatieCurateleRegister xsi:nil="true" />
+                                                    <inp.datumOpschortingBijhouding xsi:nil="true" />
+                                                    <inp.redenOpschortingBijhouding xsi:nil="true" />
+                                                    <inp.indicatieGeheim xsi:nil="true" />
+                                                    <ing.indicatieBlokkering xsi:nil="true" />
+                                                    <a:tijdstipRegistratie>11111104120150111</a:tijdstipRegistratie>
+                                                </natuurlijkPersoon>
+                                            </gerelateerde>
+                                            <functionarisType>BewaarderBoekenEnBescheiden</functionarisType>
+                                            <a:tijdstipRegistratie xsi:nil="true" />
+                                        </inn.heeftAlsFunctionaris>
+                                    </nietNatuurlijkPersoon>
+                                </gerelateerde>
+                                <inOnderzoek xsi:nil="true" />
+                                <a:tijdstipRegistratie xsi:nil="true" />
+                            </heeftAlsEigenaar>
+                            <oefentActiviteitUitIn a:entiteittype="MACVES">
+                                <gerelateerde a:entiteittype="VES">
+                                    <vestigingsNummer>000024659401</vestigingsNummer>
+                                    <authentiek xsi:nil="true" />
+                                    <volgorde a:noValue="geenWaarde" />
+                                    <handelsnaam>CasaBella B.V.</handelsnaam>
+                                    <handelsnaamVerkort a:noValue="geenWaarde" />
+                                    <datumAanvang>20110628</datumAanvang>
+                                    <datumEinde>20120314</datumEinde>
+                                    <activiteit>
+                                        <code>6630</code>
+                                        <omschrijving>Vermogensbeheer</omschrijving>
+                                        <indicatieHoofdactiviteit>J</indicatieHoofdactiviteit>
+                                        <volgorde>0</volgorde>
+                                    </activiteit>
+                                    <typeringVestiging xsi:nil="true" />
+                                    <verblijfsadres>
+                                        <aoa.identificatie>0394200000014257</aoa.identificatie>
+                                        <authentiek xsi:nil="true" />
+                                        <wpl.identificatie xsi:nil="true" />
+                                        <wpl.woonplaatsNaam>Badhoevedorp</wpl.woonplaatsNaam>
+                                        <gor.identificatie xsi:nil="true" />
+                                        <opr.identificatie xsi:nil="true" />
+                                        <gor.openbareRuimteNaam>Sloterweg</gor.openbareRuimteNaam>
+                                        <gor.straatnaam xsi:nil="true" />
+                                        <aoa.postcode>1171CM</aoa.postcode>
+                                        <aoa.huisnummer>187</aoa.huisnummer>
+                                        <aoa.huisletter xsi:nil="true" />
+                                        <aoa.huisnummertoevoeging xsi:nil="true" />
+                                        <inp.locatiebeschrijving xsi:nil="true" />
+                                        <begindatumVerblijf xsi:nil="true" />
+                                    </verblijfsadres>
+                                    <sub.correspondentieAdres>
+                                        <typering>Postadres</typering>
+                                        <wpl.woonplaatsNaam>Badhoevedorp</wpl.woonplaatsNaam>
+                                        <postcode>1171CM</postcode>
+                                        <aoa.huisletter a:noValue="geenWaarde" />
+                                        <aoa.huisnummer>187</aoa.huisnummer>
+                                        <aoa.huisnummertoevoeging a:noValue="geenWaarde" />
+                                        <aoa.identificatie>0394200000014257</aoa.identificatie>
+                                        <gor.openbareRuimteNaam>Sloterweg</gor.openbareRuimteNaam>
+                                    </sub.correspondentieAdres>
+                                    <sub.telefoonnummer xsi:nil="true" />
+                                    <sub.faxnummer xsi:nil="true" />
+                                    <sub.emailadres xsi:nil="true" />
+                                    <sub.url xsi:nil="true" />
+                                    <sub.rekeningnummerBankGiro xsi:nil="true" />
+                                    <a:tijdstipRegistratie>20120323162556722</a:tijdstipRegistratie>
+                                </gerelateerde>
+                                <inOnderzoek xsi:nil="true" />
+                                <a:tijdstipRegistratie xsi:nil="true" />
+                            </oefentActiviteitUitIn>
+                        </object>
+                    </antwoord>
+                </macLa01>
             </s:Body>
         </s:Envelope>
     </xsl:template>
